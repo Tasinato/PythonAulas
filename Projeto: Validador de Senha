@@ -1,0 +1,94 @@
+# Projeto: Validador de Senha
+
+# Regras:
+# 1. A senha deve conter pelo menos 8 caracteres.
+# 2. A senha deve conter pelo menos uma letra maiúscula.
+# 3. A senha deve conter pelo menos um número.
+# 4. A senha deve conter pelo menos um caractere especial.
+# 5. A senha não deve conter espaços em branco.
+# 6. A senha deve ser diferente de "password", "12345678" e "qwerty".
+# 7. A senha não pode ter mais de 20 caracteres.
+# 8. A senha deve conter pelo menos uma letra minúscula.
+
+# O programa deve solicitar ao usuário que insira uma senha e, em seguida, validar a senha com base nas regras acima. Se a senha for válida, o programa deve exibir uma mensagem de sucesso. 
+# Caso contrário, o programa deve exibir uma mensagem de erro indicando quais regras foram violadas. 
+# Use boa prátia de variaveis e funções para organizar o código.
+
+
+print("Bem-vindo ao Validador de Senha!")
+print("Por favor, siga as regras para criar uma senha segura:")
+print("1. A senha deve conter pelo menos 8 caracteres.")    
+print("2. A senha deve conter pelo menos uma letra maiúscula.")
+print("3. A senha deve conter pelo menos um número.")
+print("4. A senha deve conter pelo menos um caractere especial.")
+print("5. A senha não deve conter espaços em branco.")
+print("6. A senha deve ser diferente de 'password', '12345678' e 'qwerty'.")
+print("7. A senha não pode ter mais de 20 caracteres.")
+print("8. A senha deve conter pelo menos uma letra minúscula.")
+
+
+senha = input("Digite sua senha: ")
+
+def validar_senha(senha):
+    erros = []    
+# Projeto: Validador de Senha
+
+# Regras:
+# 1. A senha deve conter pelo menos 8 caracteres.
+# 2. A senha deve conter pelo menos uma letra maiúscula.
+# 3. A senha deve conter pelo menos um número.
+# 4. A senha deve conter pelo menos um caractere especial.
+# 5. A senha não deve conter espaços em branco.
+# 6. A senha deve ser diferente de "password", "12345678" e "qwerty".
+# 7. A senha não pode ter mais de 20 caracteres.
+# 8. A senha deve conter pelo menos uma letra minúscula.
+
+# O programa deve solicitar ao usuário que insira uma senha e, em seguida, validar a senha com base nas regras acima. Se a senha for válida, o programa deve exibir uma mensagem de sucesso. 
+# Caso contrário, o programa deve exibir uma mensagem de erro indicando quais regras foram violadas. 
+# Use boa prátia de variaveis e funções para organizar o código.
+
+
+print("Bem-vindo ao Validador de Senha!")
+print("Por favor, siga as regras para criar uma senha segura:")
+print("1. A senha deve conter pelo menos 8 caracteres.")    
+print("2. A senha deve conter pelo menos uma letra maiúscula.")
+print("3. A senha deve conter pelo menos um número.")
+print("4. A senha deve conter pelo menos um caractere especial.")
+print("5. A senha não deve conter espaços em branco.")
+print("6. A senha deve ser diferente de 'password', '12345678' e 'qwerty'.")
+print("7. A senha não pode ter mais de 20 caracteres.")
+print("8. A senha deve conter pelo menos uma letra minúscula.")
+
+
+senha = input("Digite sua senha: ")
+
+def validar_senha(senha):
+    erros = []  
+    
+    if len(senha) < 8 or len(senha) > 20:
+        erros.append("A senha deve conter pelo menos 8 caracteres e no máximo 20.")
+    
+    if not any(char.isupper() for char in senha):
+        erros.append("A senha deve conter pelo menos uma letra maiúscula.")
+    
+    if not any(char.isdigit() for char in senha):
+        erros.append("A senha deve conter pelo menos um número.")
+    
+    if not any(char in "!@#$%^&*()-_=+[]{}|;:'\",.<>?/" for char in senha):
+        erros.append("A senha deve conter pelo menos um caractere especial.")
+    
+    if " " in senha:
+        erros.append("A senha não deve conter espaços em branco.")
+    
+    if senha.lower() in ["password", "12345678", "qwerty"]:
+        erros.append("A senha deve ser diferente de 'password', '12345678' e 'qwerty'.")
+    
+    if not any(char.islower() for char in senha):
+        erros.append("A senha deve conter pelo menos uma letra minúscula.")
+    
+
+    return erros
+
+erros = validar_senha(senha)
+if not erros:
+    print("Senha válida! Parabéns!")   
