@@ -2,6 +2,11 @@
 
 Material didático de Python organizado por **Rafael Tasinato** para comparar diferentes formas de organizar a solução de um mesmo problema.
 
+## Atividades disponíveis
+
+1. **Validador de senha em três abordagens** — comparação entre fluxo sequencial, funções e orientação a objetos, descrita abaixo.
+2. **[Lista de exercícios: do básico ao intermediário](atividade_02_exercicios/README.md)** — dez questões com enunciados, resoluções, arquivos executáveis e exemplos para conferência.
+
 ## Uma atividade, três versões
 
 O validador recebe uma senha fictícia e informa todas as regras não atendidas. Com a configuração padrão, as três versões aplicam **as mesmas regras e produzem as mesmas mensagens**.
