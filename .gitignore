@@ -1,0 +1,21 @@
+# Arquivos gerados pelo Python
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais locais
+.venv/
+venv/
+env/
+
+# Configurações locais que podem conter credenciais
+.env
+.env.*
+!.env.example
+
+# Arquivos de editor e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
