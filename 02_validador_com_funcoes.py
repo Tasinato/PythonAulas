@@ -1,4 +1,4 @@
-"""Exercício didático de validação de senhas com regras de composição.
+"""Versão 2: validação organizada em funções de senhas com regras de composição.
 
 Use apenas entradas fictícias. A aprovação não mede a segurança real de uma senha.
 """
