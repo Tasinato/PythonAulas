@@ -84,3 +84,10 @@ Na versão com objetos, `ValidadorSenha(tamanho_minimo=10, tamanho_maximo=30)` e
 ## Escopo didático
 
 Use somente senhas fictícias. A entrada fica visível no terminal. A aprovação nas regras de composição não garante a segurança real de uma senha nem constitui um sistema de autenticação.
+
+
+## Trajetória de aprendizado
+
+O repositório público [Estudos-Python](https://github.com/Tasinato/Estudos-Python) preserva meus exercícios e anotações de cursos, incluindo os [estudos do curso de Luiz Otávio na Udemy](https://github.com/Tasinato/Estudos-Python/tree/main/Cursos/LuizOtavio-Udemy-Python3.0).
+
+Aqui no PythonAulas, o foco é organizar atividades para estudo e ensino. Os exercícios antigos continuam no repositório de origem, com os créditos dos respectivos cursos e professores.
